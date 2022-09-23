@@ -16,8 +16,8 @@ Login To Deriv
     Wait Until Page Contains Element    dt_purchase_call_button    30
     Click Element    dt_login_button
     Wait Until Page Contains Element    //input[@type='email']    10
-    Input Text    //input[@type='email']    vern.yi+3@besquare.com.my
-    Input Text    //input[@type='password']    C0rrect_p4ssword
+    Input Text    //input[@type='email']    test@example.com
+    Input Text    //input[@type='password']    *********
     Click Element    //button[@type='submit']
     Wait Until Page Does Not Contain Element    //*[@aria-label="Loading interface..."]    20
     Wait Until Page Contains Element     dt_purchase_call_button   30
@@ -39,43 +39,43 @@ Buy rise contract
     Click Element     //div[@id='dt_VRTC6739289']
     Wait Until Page Does Not Contain Element    //*[@aria-label="Loading interface..."]    20
 
-    # # Select the asset
-    # Wait Until Page Contains Element    //div[@class='cq-menu-btn']    30
-    # Click Element    //div[@class='cq-menu-btn']
-    # Sleep    5
-    # Click Element    //*[contains(text(),'Synthetic')]
-    # # Select volatility 10(1s)
-    # Wait Until Page Contains Element    //div[@class='sc-mcd__item sc-mcd__item--1HZ10V ' and contains(.,'Volatility 10 (1s) Index')]    50
-    # Click Element    //div[@class='sc-mcd__item sc-mcd__item--1HZ10V ' and contains(.,'Volatility 10 (1s) Index')] 
-    # # Select Contract Type:Rise
-    # Wait Until Page Contains Element     dt_purchase_call_button   30
-    # Click Element    //div[@class='contract-type-widget__display']
-    # Wait Until Page Contains Element    //div[@id='dt_contract_rise_fall_item']
-    # Click Element    //div[@id='dt_contract_rise_fall_item']
-    # # Select Tick
-    # Click Element    //button[@id='dc_t_toggle_item']
-    # # Buy rise
-    # Click Element    dt_purchase_call_button
+    # Select the asset
+    Wait Until Page Contains Element    //div[@class='cq-menu-btn']    30
+    Click Element    //div[@class='cq-menu-btn']
+    Sleep    5
+    Click Element    //*[contains(text(),'Synthetic')]
+    # Select volatility 10(1s)
+    Wait Until Page Contains Element    //div[@class='sc-mcd__item sc-mcd__item--1HZ10V ' and contains(.,'Volatility 10 (1s) Index')]    50
+    Click Element    //div[@class='sc-mcd__item sc-mcd__item--1HZ10V ' and contains(.,'Volatility 10 (1s) Index')] 
+    # Select Contract Type:Rise
+    Wait Until Page Contains Element     dt_purchase_call_button   30
+    Click Element    //div[@class='contract-type-widget__display']
+    Wait Until Page Contains Element    //div[@id='dt_contract_rise_fall_item']
+    Click Element    //div[@id='dt_contract_rise_fall_item']
+    # Select Tick
+    Click Element    //button[@id='dc_t_toggle_item']
+    # Buy rise
+    Click Element    dt_purchase_call_button
 
-# Buy Lower Contract
-#     Wait Until Page Contains Element    //div[@class='cq-menu-btn']    30
-#     Click Element    //div[@class='cq-menu-btn']
-#     Sleep    5
-#     Click Element    //*[contains(text(), 'Forex')]
-#     # Select AUD/USD
-#     Wait Until Page Contains Element    //div[@class='sc-mcd__item sc-mcd__item--frxAUDUSD ' and contains(.,'AUD/USD')]    50
-#     Click Element    //div[@class='sc-mcd__item sc-mcd__item--frxAUDUSD ' and contains(.,'AUD/USD')]
-#     Wait Until Page Does Not Contain Element    //*[@aria-label="Loading interface..."]    20
-#     Click Element    //*[@class='contract-type-widget__display']
-#     Click Element    //*[@id='dt_contract_high_low_item']
-#     Click Element    //*[@class='dc-input__field']
-#     Press Keys    none    BACKSPACE+1
-#     # Payout
-#     Click Element    //button[@id='dc_payout_toggle_item']
-#     Click Element    //input[@id='dt_amount_input']
-#     Press Keys    none    BACKSPACE+5.50
-#     Sleep    2
-#     Click Element    //button[@id='dt_purchase_put_button']
+Buy Lower Contract
+    Wait Until Page Contains Element    //div[@class='cq-menu-btn']    30
+    Click Element    //div[@class='cq-menu-btn']
+    Sleep    5
+    Click Element    //*[contains(text(), 'Forex')]
+    # Select AUD/USD
+    Wait Until Page Contains Element    //div[@class='sc-mcd__item sc-mcd__item--frxAUDUSD ' and contains(.,'AUD/USD')]    50
+    Click Element    //div[@class='sc-mcd__item sc-mcd__item--frxAUDUSD ' and contains(.,'AUD/USD')]
+    Wait Until Page Does Not Contain Element    //*[@aria-label="Loading interface..."]    20
+    Click Element    //*[@class='contract-type-widget__display']
+    Click Element    //*[@id='dt_contract_high_low_item']
+    Click Element    //*[@class='dc-input__field']
+    Press Keys    none    BACKSPACE+1
+    # Payout
+    Click Element    //button[@id='dc_payout_toggle_item']
+    Click Element    //input[@id='dt_amount_input']
+    Press Keys    none    BACKSPACE+5.50
+    Sleep    2
+    Click Element    //button[@id='dt_purchase_put_button']
 
 Check relative barrier error
     # Select Forex 
@@ -96,4 +96,41 @@ Check relative barrier error
     Input Text    dt_barrier_1_input    -0.11111
     Sleep    2
     Click Element    //button[@id='dt_purchase_put_button']
+
+Check Multiplier Contract Parameter
+    # Select Synthetic Indices
+    Wait Until Page Contains Element    //div[@class='cq-menu-btn']    30
+    Click Element    //div[@class='cq-menu-btn']
+    Sleep    5
+    Click Element    //*[contains(text(), 'Synthetic Indices')]
+    # Select Volatility 50 Index
+    Wait Until Page Contains Element    //div[@class='sc-mcd__item sc-mcd__item--R_50 ' and contains(.,'Volatility 50 Index')]    30
+    Click Element    //div[@class='sc-mcd__item sc-mcd__item--R_50 ' and contains(.,'Volatility 50 Index')] 
+    Wait Until Page Does Not Contain Element    //*[@aria-label="Loading interface..."]    20
+    # Select Multiplier
+    Click Element    //*[@class='contract-type-widget__display']
+    Click Element    //*[@id='dt_contract_multiplier_item']
+Check stake    
+    # Check stake
+    Wait Until Page Does Not Contain Element    //*[@aria-label="Loading interface..."]    20
+    Page Should Contain    Stake
+    Page Should Not Contain    Payout
+Check deal cancellation
+    # Only deal cancellation
+    Wait Until Page Does Not Contain Element    //*[@aria-label="Loading interface..."]    20
+    Wait Until Page Contains Element    //*[@class='dc-checkbox']
+    Click Element    //*[@class='dc-checkbox']
+    Checkbox Should Be Selected    //*[@class='dc-checkbox']
+    Checkbox Should Not Be Selected  //*[@class='dc-checkbox take_profit-checkbox__input']
+    Checkbox Should Not Be Selected    //*[@id='dc_stop_loss-checkbox_input']
+Check take profit and stop loss
+    # Only take profit and stop loss
+    Wait Until Page Does Not Contain Element    //*[@aria-label="Loading interface..."]    20
+    Wait Until Page Contains Element      //*[@class='dc-checkbox stop_loss-checkbox__input']
+    Click Element  //*[@class='dc-checkbox stop_loss-checkbox__input']
+    Checkbox Should Be Selected    //*[@class='dc-checkbox stop_loss-checkbox__input']
+    Click Element    //*[@class='dc-checkbox take_profit-checkbox__input']
+    Checkbox Should Be Selected    //*[@class='dc-checkbox take_profit-checkbox__input']]
+    Checkbox Should Not Be Selected    //*[@class='dc-checkbox']
+
     

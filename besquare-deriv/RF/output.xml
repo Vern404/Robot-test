@@ -1,292 +1,349 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 5.0.1 (Python 3.8.10 on linux)" generated="20220922 10:20:22.627" rpa="false" schemaversion="3">
+<robot generator="Robot 5.0.1 (Python 3.8.10 on linux)" generated="20220923 01:29:44.541" rpa="false" schemaversion="3">
 <suite id="s1" name="Login" source="/home/cahn/besquare-deriv/RF/login.robot">
 <test id="s1-t1" name="Login To Deriv" line="13">
 <kw name="Open Browser" library="SeleniumLibrary">
 <arg>https://app.deriv.com/</arg>
 <arg>chrome</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<msg timestamp="20220922 10:20:22.710" level="INFO">Opening browser 'chrome' to base url 'https://app.deriv.com/'.</msg>
-<status status="PASS" starttime="20220922 10:20:22.710" endtime="20220922 10:20:26.160"/>
+<msg timestamp="20220923 01:29:44.687" level="INFO">Opening browser 'chrome' to base url 'https://app.deriv.com/'.</msg>
+<msg timestamp="20220923 01:29:45.964" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-4.png"&gt;&lt;img src="selenium-screenshot-4.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg timestamp="20220923 01:29:45.964" level="FAIL">WebDriverException: Message: unknown error: net::ERR_NAME_NOT_RESOLVED
+  (Session info: chrome=104.0.5112.101)
+Stacktrace:
+#0 0x563ef4c6e403 &lt;unknown&gt;
+#1 0x563ef4a74778 &lt;unknown&gt;
+#2 0x563ef4a6e565 &lt;unknown&gt;
+#3 0x563ef4a62296 &lt;unknown&gt;
+#4 0x563ef4a63232 &lt;unknown&gt;
+#5 0x563ef4a62562 &lt;unknown&gt;
+#6 0x563ef4a61995 &lt;unknown&gt;
+#7 0x563ef4a6065b &lt;unknown&gt;
+#8 0x563ef4a60ac2 &lt;unknown&gt;
+#9 0x563ef4a761e2 &lt;unknown&gt;
+#10 0x563ef4add3cf &lt;unknown&gt;
+#11 0x563ef4ac9a02 &lt;unknown&gt;
+#12 0x563ef4adcc74 &lt;unknown&gt;
+#13 0x563ef4ac98f3 &lt;unknown&gt;
+#14 0x563ef4a9f0d8 &lt;unknown&gt;
+#15 0x563ef4aa0205 &lt;unknown&gt;
+#16 0x563ef4cb5e3d &lt;unknown&gt;
+#17 0x563ef4cb8db6 &lt;unknown&gt;
+#18 0x563ef4c9f13e &lt;unknown&gt;
+#19 0x563ef4cb99b5 &lt;unknown&gt;
+#20 0x563ef4c93970 &lt;unknown&gt;
+#21 0x563ef4cd6228 &lt;unknown&gt;
+#22 0x563ef4cd63bf &lt;unknown&gt;
+#23 0x563ef4cf0abe &lt;unknown&gt;
+#24 0x7f70207c5609 &lt;unknown&gt;
+</msg>
+<status status="FAIL" starttime="20220923 01:29:44.686" endtime="20220923 01:29:45.967"/>
 </kw>
 <kw name="Maximize Browser Window" library="SeleniumLibrary">
 <doc>Maximizes current browser window.</doc>
-<status status="PASS" starttime="20220922 10:20:26.161" endtime="20220922 10:20:26.269"/>
+<status status="NOT RUN" starttime="20220923 01:29:45.967" endtime="20220923 01:29:45.967"/>
 </kw>
 <kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
 <arg>dt_purchase_call_button</arg>
 <arg>30</arg>
 <doc>Waits until the element ``locator`` appears on the current page.</doc>
-<status status="PASS" starttime="20220922 10:20:26.269" endtime="20220922 10:20:29.388"/>
+<status status="NOT RUN" starttime="20220923 01:29:45.968" endtime="20220923 01:29:45.968"/>
 </kw>
 <kw name="Click Element" library="SeleniumLibrary">
 <arg>dt_login_button</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20220922 10:20:29.389" level="INFO">Clicking element 'dt_login_button'.</msg>
-<status status="PASS" starttime="20220922 10:20:29.389" endtime="20220922 10:20:31.935"/>
+<status status="NOT RUN" starttime="20220923 01:29:45.968" endtime="20220923 01:29:45.968"/>
 </kw>
 <kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
 <arg>//input[@type='email']</arg>
 <arg>10</arg>
 <doc>Waits until the element ``locator`` appears on the current page.</doc>
-<status status="PASS" starttime="20220922 10:20:31.935" endtime="20220922 10:20:31.964"/>
+<status status="NOT RUN" starttime="20220923 01:29:45.968" endtime="20220923 01:29:45.968"/>
 </kw>
 <kw name="Input Text" library="SeleniumLibrary">
 <arg>//input[@type='email']</arg>
 <arg>vern.yi+3@besquare.com.my</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20220922 10:20:31.965" level="INFO">Typing text 'vern.yi+3@besquare.com.my' into text field '//input[@type='email']'.</msg>
-<status status="PASS" starttime="20220922 10:20:31.964" endtime="20220922 10:20:32.027"/>
+<status status="NOT RUN" starttime="20220923 01:29:45.968" endtime="20220923 01:29:45.968"/>
 </kw>
 <kw name="Input Text" library="SeleniumLibrary">
 <arg>//input[@type='password']</arg>
 <arg>C0rrect_p4ssword</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20220922 10:20:32.027" level="INFO">Typing text 'C0rrect_p4ssword' into text field '//input[@type='password']'.</msg>
-<status status="PASS" starttime="20220922 10:20:32.027" endtime="20220922 10:20:32.091"/>
+<status status="NOT RUN" starttime="20220923 01:29:45.968" endtime="20220923 01:29:45.968"/>
 </kw>
 <kw name="Click Element" library="SeleniumLibrary">
 <arg>//button[@type='submit']</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20220922 10:20:32.091" level="INFO">Clicking element '//button[@type='submit']'.</msg>
-<status status="PASS" starttime="20220922 10:20:32.091" endtime="20220922 10:20:35.386"/>
+<status status="NOT RUN" starttime="20220923 01:29:45.969" endtime="20220923 01:29:45.969"/>
 </kw>
 <kw name="Wait Until Page Does Not Contain Element" library="SeleniumLibrary">
 <arg>//*[@aria-label="Loading interface..."]</arg>
 <arg>20</arg>
 <doc>Waits until the element ``locator`` disappears from the current page.</doc>
-<status status="PASS" starttime="20220922 10:20:35.387" endtime="20220922 10:20:37.551"/>
+<status status="NOT RUN" starttime="20220923 01:29:45.969" endtime="20220923 01:29:45.969"/>
 </kw>
 <kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
 <arg>dt_purchase_call_button</arg>
 <arg>30</arg>
 <doc>Waits until the element ``locator`` appears on the current page.</doc>
-<status status="PASS" starttime="20220922 10:20:37.551" endtime="20220922 10:20:37.690"/>
+<status status="NOT RUN" starttime="20220923 01:29:45.969" endtime="20220923 01:29:45.969"/>
 </kw>
-<status status="PASS" starttime="20220922 10:20:22.709" endtime="20220922 10:20:37.691"/>
+<status status="FAIL" starttime="20220923 01:29:44.686" endtime="20220923 01:29:45.970">WebDriverException: Message: unknown error: net::ERR_NAME_NOT_RESOLVED
+  (Session info: chrome=104.0.5112.101)
+Stacktrace:
+#0 0x563ef4c6e403 &lt;unknown&gt;
+#1 0x563ef4a74778 &lt;unknown&gt;
+#2 0x563ef4a6e565 &lt;unknown&gt;
+#3 0x563ef4a62296 &lt;unknown&gt;
+#4 0x563ef4a63232 &lt;unknown&gt;
+#5 0x563ef4a62562 &lt;unknown&gt;
+#6 0x563ef4a61995 &lt;unknown&gt;
+#7 0x563ef4a6065b &lt;unknown&gt;
+#8 0x563ef4a60ac2 &lt;unknown&gt;
+#9 0x563ef4a761e2 &lt;unknown&gt;
+#10 0x563ef4add3cf &lt;unknown&gt;
+#11 0x563ef4ac9a02 &lt;unknown&gt;
+#12 0x563ef4adcc74 &lt;unknown&gt;
+#13 0x563ef4ac98f3 &lt;unknown&gt;
+#14 0x563ef4a9f0d8 &lt;unknown&gt;
+#15 0x563ef4aa0205 &lt;unknown&gt;
+#16 0x563ef4cb5e3d &lt;unknown&gt;
+#17 0x563ef4cb8db6 &lt;unknown&gt;
+#18 0x563ef4c9f13e &lt;unknown&gt;
+#19 0x563ef4cb99b5 &lt;unknown&gt;
+#20 0x563ef4c93970 &lt;unknown&gt;
+#21 0x563ef4cd6228 &lt;unknown&gt;
+#22 0x563ef4cd63bf &lt;unknown&gt;
+#23 0x563ef4cf0abe &lt;unknown&gt;
+#24 0x7f70207c5609 &lt;unknown&gt;
+</status>
 </test>
 <test id="s1-t2" name="Check Real and Demo Account" line="26">
 <kw name="Click Element" library="SeleniumLibrary">
 <arg>dt_core_account-info_acc-info</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20220922 10:20:37.692" level="INFO">Clicking element 'dt_core_account-info_acc-info'.</msg>
-<status status="PASS" starttime="20220922 10:20:37.692" endtime="20220922 10:20:37.914"/>
+<msg timestamp="20220923 01:29:45.975" level="INFO">Clicking element 'dt_core_account-info_acc-info'.</msg>
+<msg timestamp="20220923 01:29:46.085" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-5.png"&gt;&lt;img src="selenium-screenshot-5.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg timestamp="20220923 01:29:46.086" level="FAIL">Element with locator 'dt_core_account-info_acc-info' not found.</msg>
+<status status="FAIL" starttime="20220923 01:29:45.974" endtime="20220923 01:29:46.087"/>
 </kw>
 <kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
 <arg>real_account_tab</arg>
 <arg>30</arg>
 <doc>Waits until the element ``locator`` appears on the current page.</doc>
-<status status="PASS" starttime="20220922 10:20:37.914" endtime="20220922 10:20:37.927"/>
+<status status="NOT RUN" starttime="20220923 01:29:46.088" endtime="20220923 01:29:46.088"/>
 </kw>
 <kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
 <arg>dt_core_account-switcher_demo-tab</arg>
 <arg>30</arg>
 <doc>Waits until the element ``locator`` appears on the current page.</doc>
-<status status="PASS" starttime="20220922 10:20:37.927" endtime="20220922 10:20:37.950"/>
+<status status="NOT RUN" starttime="20220923 01:29:46.088" endtime="20220923 01:29:46.088"/>
 </kw>
 <kw name="Click Element" library="SeleniumLibrary">
 <arg>dt_core_account-switcher_demo-tab</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20220922 10:20:37.951" level="INFO">Clicking element 'dt_core_account-switcher_demo-tab'.</msg>
-<status status="PASS" starttime="20220922 10:20:37.951" endtime="20220922 10:20:38.017"/>
+<status status="NOT RUN" starttime="20220923 01:29:46.088" endtime="20220923 01:29:46.088"/>
 </kw>
 <kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
 <arg>dt_core_account-switcher_demo-tab</arg>
 <arg>30</arg>
 <doc>Waits until the element ``locator`` appears on the current page.</doc>
-<status status="PASS" starttime="20220922 10:20:38.017" endtime="20220922 10:20:38.026"/>
+<status status="NOT RUN" starttime="20220923 01:29:46.088" endtime="20220923 01:29:46.088"/>
 </kw>
-<status status="PASS" starttime="20220922 10:20:37.692" endtime="20220922 10:20:38.027"/>
+<status status="FAIL" starttime="20220923 01:29:45.973" endtime="20220923 01:29:46.089">Element with locator 'dt_core_account-info_acc-info' not found.</status>
 </test>
 <test id="s1-t3" name="Buy rise contract" line="36">
 <kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
 <arg>//div[@id='dt_VRTC6739289']</arg>
 <arg>30</arg>
 <doc>Waits until the element ``locator`` appears on the current page.</doc>
-<status status="PASS" starttime="20220922 10:20:38.028" endtime="20220922 10:20:38.041"/>
+<msg timestamp="20220923 01:30:16.284" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-6.png"&gt;&lt;img src="selenium-screenshot-6.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg timestamp="20220923 01:30:16.284" level="FAIL">Element '//div[@id='dt_VRTC6739289']' did not appear in 30 seconds.</msg>
+<status status="FAIL" starttime="20220923 01:29:46.090" endtime="20220923 01:30:16.287"/>
 </kw>
 <kw name="Click Element" library="SeleniumLibrary">
 <arg>//div[@id='dt_VRTC6739289']</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20220922 10:20:38.042" level="INFO">Clicking element '//div[@id='dt_VRTC6739289']'.</msg>
-<status status="PASS" starttime="20220922 10:20:38.041" endtime="20220922 10:20:38.220"/>
+<status status="NOT RUN" starttime="20220923 01:30:16.290" endtime="20220923 01:30:16.291"/>
 </kw>
 <kw name="Wait Until Page Does Not Contain Element" library="SeleniumLibrary">
 <arg>//*[@aria-label="Loading interface..."]</arg>
 <arg>20</arg>
 <doc>Waits until the element ``locator`` disappears from the current page.</doc>
-<status status="PASS" starttime="20220922 10:20:38.220" endtime="20220922 10:20:48.535"/>
+<status status="NOT RUN" starttime="20220923 01:30:16.291" endtime="20220923 01:30:16.291"/>
 </kw>
-<status status="PASS" starttime="20220922 10:20:38.027" endtime="20220922 10:20:48.535"/>
+<status status="FAIL" starttime="20220923 01:29:46.089" endtime="20220923 01:30:16.291">Element '//div[@id='dt_VRTC6739289']' did not appear in 30 seconds.</status>
 </test>
-<test id="s1-t4" name="Check relative barrier error" line="80">
+<test id="s1-t4" name="Check Multiplier Contract Parameter" line="100">
 <kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
 <arg>//div[@class='cq-menu-btn']</arg>
 <arg>30</arg>
 <doc>Waits until the element ``locator`` appears on the current page.</doc>
-<status status="PASS" starttime="20220922 10:20:48.539" endtime="20220922 10:20:48.584"/>
+<status status="PASS" starttime="20220923 01:30:16.292" endtime="20220923 01:30:16.352"/>
 </kw>
 <kw name="Click Element" library="SeleniumLibrary">
 <arg>//div[@class='cq-menu-btn']</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20220922 10:20:48.585" level="INFO">Clicking element '//div[@class='cq-menu-btn']'.</msg>
-<status status="PASS" starttime="20220922 10:20:48.584" endtime="20220922 10:20:48.811"/>
+<msg timestamp="20220923 01:30:16.353" level="INFO">Clicking element '//div[@class='cq-menu-btn']'.</msg>
+<status status="PASS" starttime="20220923 01:30:16.352" endtime="20220923 01:30:16.488"/>
 </kw>
 <kw name="Sleep" library="BuiltIn">
 <arg>5</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<msg timestamp="20220922 10:20:53.811" level="INFO">Slept 5 seconds</msg>
-<status status="PASS" starttime="20220922 10:20:48.811" endtime="20220922 10:20:53.811"/>
+<msg timestamp="20220923 01:30:21.489" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20220923 01:30:16.488" endtime="20220923 01:30:21.489"/>
 </kw>
 <kw name="Click Element" library="SeleniumLibrary">
-<arg>//*[contains(text(), 'Forex')]</arg>
+<arg>//*[contains(text(), 'Synthetic Indices')]</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20220922 10:20:53.812" level="INFO">Clicking element '//*[contains(text(), 'Forex')]'.</msg>
-<status status="PASS" starttime="20220922 10:20:53.812" endtime="20220922 10:20:53.933"/>
+<msg timestamp="20220923 01:30:21.490" level="INFO">Clicking element '//*[contains(text(), 'Synthetic Indices')]'.</msg>
+<status status="PASS" starttime="20220923 01:30:21.489" endtime="20220923 01:30:21.544"/>
 </kw>
 <kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
-<arg>//div[@class='sc-mcd__item sc-mcd__item--frxAUDUSD ' and contains(.,'AUD/USD')]</arg>
-<arg>50</arg>
+<arg>//div[@class='sc-mcd__item sc-mcd__item--R_50 ' and contains(.,'Volatility 50 Index')]</arg>
+<arg>30</arg>
 <doc>Waits until the element ``locator`` appears on the current page.</doc>
-<status status="PASS" starttime="20220922 10:20:53.934" endtime="20220922 10:20:53.945"/>
+<status status="PASS" starttime="20220923 01:30:21.544" endtime="20220923 01:30:21.556"/>
 </kw>
 <kw name="Click Element" library="SeleniumLibrary">
-<arg>//div[@class='sc-mcd__item sc-mcd__item--frxAUDUSD ' and contains(.,'AUD/USD')]</arg>
+<arg>//div[@class='sc-mcd__item sc-mcd__item--R_50 ' and contains(.,'Volatility 50 Index')]</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20220922 10:20:53.946" level="INFO">Clicking element '//div[@class='sc-mcd__item sc-mcd__item--frxAUDUSD ' and contains(.,'AUD/USD')]'.</msg>
-<status status="PASS" starttime="20220922 10:20:53.946" endtime="20220922 10:20:54.056"/>
+<msg timestamp="20220923 01:30:21.556" level="INFO">Clicking element '//div[@class='sc-mcd__item sc-mcd__item--R_50 ' and contains(.,'Volatility 50 Index')]'.</msg>
+<status status="PASS" starttime="20220923 01:30:21.556" endtime="20220923 01:30:21.689"/>
 </kw>
 <kw name="Wait Until Page Does Not Contain Element" library="SeleniumLibrary">
 <arg>//*[@aria-label="Loading interface..."]</arg>
 <arg>20</arg>
 <doc>Waits until the element ``locator`` disappears from the current page.</doc>
-<status status="PASS" starttime="20220922 10:20:54.057" endtime="20220922 10:20:54.960"/>
+<status status="PASS" starttime="20220923 01:30:21.689" endtime="20220923 01:30:22.204"/>
 </kw>
 <kw name="Click Element" library="SeleniumLibrary">
 <arg>//*[@class='contract-type-widget__display']</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20220922 10:20:54.961" level="INFO">Clicking element '//*[@class='contract-type-widget__display']'.</msg>
-<status status="PASS" starttime="20220922 10:20:54.961" endtime="20220922 10:20:55.077"/>
+<msg timestamp="20220923 01:30:22.204" level="INFO">Clicking element '//*[@class='contract-type-widget__display']'.</msg>
+<status status="PASS" starttime="20220923 01:30:22.204" endtime="20220923 01:30:22.301"/>
 </kw>
 <kw name="Click Element" library="SeleniumLibrary">
-<arg>//*[@id='dt_contract_high_low_item']</arg>
+<arg>//*[@id='dt_contract_multiplier_item']</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20220922 10:20:55.078" level="INFO">Clicking element '//*[@id='dt_contract_high_low_item']'.</msg>
-<status status="PASS" starttime="20220922 10:20:55.077" endtime="20220922 10:20:55.450"/>
+<msg timestamp="20220923 01:30:22.302" level="INFO">Clicking element '//*[@id='dt_contract_multiplier_item']'.</msg>
+<status status="PASS" starttime="20220923 01:30:22.302" endtime="20220923 01:30:22.629"/>
 </kw>
-<kw name="Click Element" library="SeleniumLibrary">
-<arg>//*[@class='dc-input__field']</arg>
-<doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20220922 10:20:55.450" level="INFO">Clicking element '//*[@class='dc-input__field']'.</msg>
-<status status="PASS" starttime="20220922 10:20:55.450" endtime="20220922 10:20:55.752"/>
-</kw>
-<kw name="Press Keys" library="SeleniumLibrary">
-<arg>none</arg>
-<arg>BACKSPACE+1</arg>
-<doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
-<msg timestamp="20220922 10:20:55.753" level="INFO">Sending key(s) ('BACKSPACE+1',) to page.</msg>
-<msg timestamp="20220922 10:20:55.753" level="INFO">Pressing special key BACKSPACE down.</msg>
-<msg timestamp="20220922 10:20:55.753" level="INFO">Sending key 1</msg>
-<msg timestamp="20220922 10:20:55.753" level="INFO">Releasing special key BACKSPACE.</msg>
-<status status="PASS" starttime="20220922 10:20:55.753" endtime="20220922 10:20:55.852"/>
-</kw>
-<kw name="Press Keys" library="SeleniumLibrary">
-<arg>//div[@class='dc-input-field trade-container__barriers-single']</arg>
-<arg>CTRL+A+BACKSPACE</arg>
-<doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
-<msg timestamp="20220922 10:20:55.852" level="INFO">Sending key(s) ('CTRL+A+BACKSPACE',) to //div[@class='dc-input-field trade-container__barriers-single'] element.</msg>
-<msg timestamp="20220922 10:20:56.231" level="INFO">Pressing special key CONTROL down.</msg>
-<msg timestamp="20220922 10:20:56.232" level="INFO">Sending key A</msg>
-<msg timestamp="20220922 10:20:56.232" level="INFO">Pressing special key BACKSPACE down.</msg>
-<msg timestamp="20220922 10:20:56.232" level="INFO">Releasing special key CONTROL.</msg>
-<msg timestamp="20220922 10:20:56.232" level="INFO">Releasing special key BACKSPACE.</msg>
-<status status="PASS" starttime="20220922 10:20:55.852" endtime="20220922 10:20:56.292"/>
-</kw>
-<kw name="Input Text" library="SeleniumLibrary">
-<arg>dt_barrier_1_input</arg>
-<arg>-0.11111</arg>
-<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20220922 10:20:56.292" level="INFO">Typing text '-0.11111' into text field 'dt_barrier_1_input'.</msg>
-<status status="PASS" starttime="20220922 10:20:56.292" endtime="20220922 10:20:56.433"/>
-</kw>
-<kw name="Sleep" library="BuiltIn">
-<arg>2</arg>
-<doc>Pauses the test executed for the given time.</doc>
-<msg timestamp="20220922 10:20:58.434" level="INFO">Slept 2 seconds</msg>
-<status status="PASS" starttime="20220922 10:20:56.433" endtime="20220922 10:20:58.434"/>
-</kw>
-<kw name="Click Element" library="SeleniumLibrary">
-<arg>//button[@id='dt_purchase_put_button']</arg>
-<doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20220922 10:20:58.435" level="INFO">Clicking element '//button[@id='dt_purchase_put_button']'.</msg>
-<msg timestamp="20220922 10:20:58.690" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-1.png"&gt;&lt;img src="selenium-screenshot-1.png" width="800px"&gt;&lt;/a&gt;</msg>
-<msg timestamp="20220922 10:20:58.690" level="FAIL">StaleElementReferenceException: Message: stale element reference: element is not attached to the page document
-  (Session info: chrome=104.0.5112.101)
-Stacktrace:
-#0 0x5577d37d5403 &lt;unknown&gt;
-#1 0x5577d35db778 &lt;unknown&gt;
-#2 0x5577d35de617 &lt;unknown&gt;
-#3 0x5577d35de4c4 &lt;unknown&gt;
-#4 0x5577d35de77c &lt;unknown&gt;
-#5 0x5577d36148ca &lt;unknown&gt;
-#6 0x5577d3607d46 &lt;unknown&gt;
-#7 0x5577d3630a02 &lt;unknown&gt;
-#8 0x5577d3607703 &lt;unknown&gt;
-#9 0x5577d3630b0e &lt;unknown&gt;
-#10 0x5577d3643c74 &lt;unknown&gt;
-#11 0x5577d36308f3 &lt;unknown&gt;
-#12 0x5577d36060d8 &lt;unknown&gt;
-#13 0x5577d3607205 &lt;unknown&gt;
-#14 0x5577d381ce3d &lt;unknown&gt;
-#15 0x5577d381fdb6 &lt;unknown&gt;
-#16 0x5577d380613e &lt;unknown&gt;
-#17 0x5577d38209b5 &lt;unknown&gt;
-#18 0x5577d37fa970 &lt;unknown&gt;
-#19 0x5577d383d228 &lt;unknown&gt;
-#20 0x5577d383d3bf &lt;unknown&gt;
-#21 0x5577d3857abe &lt;unknown&gt;
-#22 0x7fcd87427609 &lt;unknown&gt;
-</msg>
-<status status="FAIL" starttime="20220922 10:20:58.434" endtime="20220922 10:20:58.691"/>
-</kw>
-<status status="FAIL" starttime="20220922 10:20:48.537" endtime="20220922 10:20:58.691">StaleElementReferenceException: Message: stale element reference: element is not attached to the page document
-  (Session info: chrome=104.0.5112.101)
-Stacktrace:
-#0 0x5577d37d5403 &lt;unknown&gt;
-#1 0x5577d35db778 &lt;unknown&gt;
-#2 0x5577d35de617 &lt;unknown&gt;
-#3 0x5577d35de4c4 &lt;unknown&gt;
-#4 0x5577d35de77c &lt;unknown&gt;
-#5 0x5577d36148ca &lt;unknown&gt;
-#6 0x5577d3607d46 &lt;unknown&gt;
-#7 0x5577d3630a02 &lt;unknown&gt;
-#8 0x5577d3607703 &lt;unknown&gt;
-#9 0x5577d3630b0e &lt;unknown&gt;
-#10 0x5577d3643c74 &lt;unknown&gt;
-#11 0x5577d36308f3 &lt;unknown&gt;
-#12 0x5577d36060d8 &lt;unknown&gt;
-#13 0x5577d3607205 &lt;unknown&gt;
-#14 0x5577d381ce3d &lt;unknown&gt;
-#15 0x5577d381fdb6 &lt;unknown&gt;
-#16 0x5577d380613e &lt;unknown&gt;
-#17 0x5577d38209b5 &lt;unknown&gt;
-#18 0x5577d37fa970 &lt;unknown&gt;
-#19 0x5577d383d228 &lt;unknown&gt;
-#20 0x5577d383d3bf &lt;unknown&gt;
-#21 0x5577d3857abe &lt;unknown&gt;
-#22 0x7fcd87427609 &lt;unknown&gt;
-</status>
+<status status="PASS" starttime="20220923 01:30:16.292" endtime="20220923 01:30:22.630"/>
 </test>
-<status status="FAIL" starttime="20220922 10:20:22.628" endtime="20220922 10:20:58.692"/>
+<test id="s1-t5" name="Check stake" line="113">
+<kw name="Wait Until Page Does Not Contain Element" library="SeleniumLibrary">
+<arg>//*[@aria-label="Loading interface..."]</arg>
+<arg>20</arg>
+<doc>Waits until the element ``locator`` disappears from the current page.</doc>
+<status status="PASS" starttime="20220923 01:30:22.631" endtime="20220923 01:30:22.639"/>
+</kw>
+<kw name="Page Should Contain" library="SeleniumLibrary">
+<arg>Stake</arg>
+<doc>Verifies that current page contains ``text``.</doc>
+<msg timestamp="20220923 01:30:22.653" level="INFO">Current page contains text 'Stake'.</msg>
+<status status="PASS" starttime="20220923 01:30:22.640" endtime="20220923 01:30:22.653"/>
+</kw>
+<kw name="Page Should Not Contain" library="SeleniumLibrary">
+<arg>Payout</arg>
+<doc>Verifies the current page does not contain ``text``.</doc>
+<msg timestamp="20220923 01:30:22.790" level="INFO">Current page does not contain text 'Payout'.</msg>
+<status status="PASS" starttime="20220923 01:30:22.654" endtime="20220923 01:30:22.790"/>
+</kw>
+<status status="PASS" starttime="20220923 01:30:22.631" endtime="20220923 01:30:22.790"/>
+</test>
+<test id="s1-t6" name="Check deal cancellation" line="118">
+<kw name="Wait Until Page Does Not Contain Element" library="SeleniumLibrary">
+<arg>//*[@aria-label="Loading interface..."]</arg>
+<arg>20</arg>
+<doc>Waits until the element ``locator`` disappears from the current page.</doc>
+<status status="PASS" starttime="20220923 01:30:22.791" endtime="20220923 01:30:22.797"/>
+</kw>
+<kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
+<arg>//*[@class='dc-checkbox']</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" starttime="20220923 01:30:22.797" endtime="20220923 01:30:22.811"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>//*[@class='dc-checkbox']</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220923 01:30:22.812" level="INFO">Clicking element '//*[@class='dc-checkbox']'.</msg>
+<status status="PASS" starttime="20220923 01:30:22.812" endtime="20220923 01:30:22.893"/>
+</kw>
+<kw name="Checkbox Should Be Selected" library="SeleniumLibrary">
+<arg>//*[@class='dc-checkbox']</arg>
+<doc>Verifies checkbox ``locator`` is selected/checked.</doc>
+<msg timestamp="20220923 01:30:22.893" level="INFO">Verifying checkbox '//*[@class='dc-checkbox']' is selected.</msg>
+<msg timestamp="20220923 01:30:23.010" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-7.png"&gt;&lt;img src="selenium-screenshot-7.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg timestamp="20220923 01:30:23.010" level="FAIL">Checkbox with locator '//*[@class='dc-checkbox']' not found.</msg>
+<status status="FAIL" starttime="20220923 01:30:22.893" endtime="20220923 01:30:23.011"/>
+</kw>
+<kw name="Checkbox Should Not Be Selected" library="SeleniumLibrary">
+<arg>//*[@class='dc-checkbox take_profit-checkbox__input']</arg>
+<doc>Verifies checkbox ``locator`` is not selected/checked.</doc>
+<status status="NOT RUN" starttime="20220923 01:30:23.012" endtime="20220923 01:30:23.012"/>
+</kw>
+<kw name="Checkbox Should Not Be Selected" library="SeleniumLibrary">
+<arg>//*[@id='dc_stop_loss-checkbox_input']</arg>
+<doc>Verifies checkbox ``locator`` is not selected/checked.</doc>
+<status status="NOT RUN" starttime="20220923 01:30:23.012" endtime="20220923 01:30:23.012"/>
+</kw>
+<status status="FAIL" starttime="20220923 01:30:22.790" endtime="20220923 01:30:23.012">Checkbox with locator '//*[@class='dc-checkbox']' not found.</status>
+</test>
+<test id="s1-t7" name="Check take profit and stop loss" line="126">
+<kw name="Wait Until Page Does Not Contain Element" library="SeleniumLibrary">
+<arg>//*[@aria-label="Loading interface..."]</arg>
+<arg>20</arg>
+<doc>Waits until the element ``locator`` disappears from the current page.</doc>
+<status status="PASS" starttime="20220923 01:30:23.013" endtime="20220923 01:30:23.019"/>
+</kw>
+<kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
+<arg>//*[@class='dc-checkbox stop_loss-checkbox__input']</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" starttime="20220923 01:30:23.019" endtime="20220923 01:30:23.029"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>//*[@class='dc-checkbox stop_loss-checkbox__input']</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220923 01:30:23.029" level="INFO">Clicking element '//*[@class='dc-checkbox stop_loss-checkbox__input']'.</msg>
+<status status="PASS" starttime="20220923 01:30:23.029" endtime="20220923 01:30:23.133"/>
+</kw>
+<kw name="Checkbox Should Be Selected" library="SeleniumLibrary">
+<arg>//*[@class='dc-checkbox stop_loss-checkbox__input']</arg>
+<doc>Verifies checkbox ``locator`` is selected/checked.</doc>
+<msg timestamp="20220923 01:30:23.134" level="INFO">Verifying checkbox '//*[@class='dc-checkbox stop_loss-checkbox__input']' is selected.</msg>
+<msg timestamp="20220923 01:30:23.246" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-8.png"&gt;&lt;img src="selenium-screenshot-8.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg timestamp="20220923 01:30:23.247" level="FAIL">Checkbox with locator '//*[@class='dc-checkbox stop_loss-checkbox__input']' not found.</msg>
+<status status="FAIL" starttime="20220923 01:30:23.133" endtime="20220923 01:30:23.247"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>//*[@class='dc-checkbox take_profit-checkbox__input']</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20220923 01:30:23.247" endtime="20220923 01:30:23.247"/>
+</kw>
+<kw name="Checkbox Should Be Selected" library="SeleniumLibrary">
+<arg>//*[@class='dc-checkbox take_profit-checkbox__input']]</arg>
+<doc>Verifies checkbox ``locator`` is selected/checked.</doc>
+<status status="NOT RUN" starttime="20220923 01:30:23.247" endtime="20220923 01:30:23.247"/>
+</kw>
+<kw name="Checkbox Should Not Be Selected" library="SeleniumLibrary">
+<arg>//*[@class='dc-checkbox']</arg>
+<doc>Verifies checkbox ``locator`` is not selected/checked.</doc>
+<status status="NOT RUN" starttime="20220923 01:30:23.247" endtime="20220923 01:30:23.247"/>
+</kw>
+<status status="FAIL" starttime="20220923 01:30:23.013" endtime="20220923 01:30:23.248">Checkbox with locator '//*[@class='dc-checkbox stop_loss-checkbox__input']' not found.</status>
+</test>
+<status status="FAIL" starttime="20220923 01:29:44.541" endtime="20220923 01:30:23.249"/>
 </suite>
 <statistics>
 <total>
-<stat pass="3" fail="1" skip="0">All Tests</stat>
+<stat pass="2" fail="5" skip="0">All Tests</stat>
 </total>
 <tag>
 </tag>
 <suite>
-<stat pass="3" fail="1" skip="0" id="s1" name="Login">Login</stat>
+<stat pass="2" fail="5" skip="0" id="s1" name="Login">Login</stat>
 </suite>
 </statistics>
 <errors>
